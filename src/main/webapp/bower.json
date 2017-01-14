@@ -1,0 +1,24 @@
+{
+  "name": "Portal",
+  "homepage": "https://github.com/kealin/portal",
+  "authors": [
+    "Kim Lindqvist <k.lindqvist@gmail.com>"
+  ],
+  "description": "Personal portal",
+  "main": "app.js",
+  "keywords": [
+    "Portal"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1"
+  }
+}
