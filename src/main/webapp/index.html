@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Portal</title>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css"/>
 
-<script src="bower_components/angular/angular.js"></script>
+</head>
+<body ng-app="app">
+<ng-sidebar></ng-sidebar>
+<div ui-view></div>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+<script src="app/app.module.js"></script>
+<script src="app/app.routes.js"></script>
+<script src="app/shared/topnav/ngTopnav.js"></script>
+<script src="app/components/home/homeController.js"></script>
 </body>
 </html>

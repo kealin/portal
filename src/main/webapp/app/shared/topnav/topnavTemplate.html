@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+
+        <!-- note the ng-init and ng-click here: -->
+        <button type="button" class="navbar-toggle" ng-init="navCollapsed = true"
+                ng-click="navCollapsed = !navCollapsed">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#/"><img class="logo" src=""></a>
+    </div>
+
+    <div class="collapse navbar-collapse" uib-collapse="navCollapsed">
+        <ul class="nav navbar-nav">
+            <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#mapping"><i class="fa fa-sitemap" aria-hidden="true"></i> Blog</a></li>
+            <li><a href="#search"><i class="fa fa-search" aria-hidden="true"></i> Portfolio</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <!-- Todo add login and register -->
+        </ul>
+    </div>
+</nav>
