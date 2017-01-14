@@ -9,6 +9,17 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
         .state('home', {
             url: '/',
-            templateUrl: 'app/components/home/homeView.html',
+            templateUrl: 'app/components/home/homeView.html'
         })
+
+        .state('blog', {
+            url: '/blog',
+            templateUrl: 'app/components/blog/blogView.html'
+        })
+
+        .state('login', {
+            url: 'login',
+            templateUrl: 'app/components/login/loginView.html'
+        });
+
 });
