@@ -17,6 +17,19 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'app/components/blog/blogView.html'
         })
 
+        .state('portfolio', {
+            url: '/portfolio',
+            templateUrl: 'app/components/portfolio/portfolioView.html'
+        })
+
+        .state('admin', {
+            url: '/admin',
+            templateUrl: 'app/components/admin/adminView.html',
+            data: {
+                requiresLogin: true
+            }
+        })
+
         .state('login', {
             url: 'login',
             templateUrl: 'app/components/login/loginView.html'
